@@ -35,14 +35,16 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Hello World</title>
     </head>
-    <body>
+    <body ng-app="ngCordovaTest" ng-controller="cordovaController">
         <div class="app">
             <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
+                <p class="event listening">{{device}}</p>
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
+		<script src="libs/angular.js"></script>
+		<script src="libs/ng-cordova.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
